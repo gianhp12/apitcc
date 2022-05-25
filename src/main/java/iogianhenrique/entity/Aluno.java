@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import org.hibernate.validator.constraints.br.CPF;
 import javax.persistence.*;
 import javax.validation.constraints.Email;
+import java.math.BigInteger;
 
 @Data
 @AllArgsConstructor
@@ -15,9 +16,8 @@ import javax.validation.constraints.Email;
 public class Aluno {
 
     @Id
-    @CPF
     @Column(name = "cpf")
-    String cpf;
+    BigInteger cpf;
 
     @Column(name = "nome")
     String nome;
