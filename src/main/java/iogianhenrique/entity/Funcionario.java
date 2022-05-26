@@ -9,6 +9,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.Email;
+import java.math.BigInteger;
 
 @Entity
 @Data
@@ -20,7 +21,7 @@ public class Funcionario {
     @Id
     @CPF
     @Column(name = "cpf")
-    String cpf;
+    BigInteger cpf;
 
     @Column(name = "nome")
     String nome;
