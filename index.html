@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Biblioteca Moderna</title>
+    <!-- Favicon--
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+    
+        type="text/css" />
+       
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet"  />
+</head>
+
+<body id="page-top">
+    <!-- Navigation-->
+
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Biblioteca Moderna</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item dropdown mx-0 mx-lg-1"> 
+                        <a class="nav-link dropdown-toggle py-3 px-0 px-lg-3 rounded" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Empréstimo</a>
+                         <div class="dropdown-menu">
+                           <a class="dropdown-item" href="#">Novo</a>
+                           <a class="dropdown-item" href="#">Consultar</a>
+                         </div>   
+                    </li>
+                    <li class="nav-item dropdown mx-0 mx-lg-1"> 
+                     <a class="nav-link dropdown-toggle py-3 px-0 px-lg-3 rounded" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Livros</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="cadastroLivros.html">Cadastrar</a>
+                        <a class="dropdown-item" href="#">Consultar</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown mx-0 mx-lg-1"> 
+                        <a class="nav-link dropdown-toggle py-3 px-0 px-lg-3 rounded" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Alunos</a>
+                         <div class="dropdown-menu">
+                           <a class="dropdown-item" href="cadastroAlunos.html">Cadastrar</a>
+                           <a class="dropdown-item" href="consultaAlunos.html">Consultar</a>
+                         </div>   
+                    </li>
+                    <li class="nav-item dropdown mx-0 mx-lg-1"> 
+                        <a class="nav-link dropdown-toggle py-3 px-0 px-lg-3 rounded" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Funcionarios</a>
+                         <div class="dropdown-menu">
+                           <a class="dropdown-item" href="cadastroFuncionarios.html">Cadastrar</a>
+                           <a class="dropdown-item" href="#">Consultar</a>
+                         </div>   
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <!-- Masthead Avatar Image-->
+            <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
+            <!-- Masthead Heading-->
+            <h1 class="masthead-heading text-uppercase mb-0">Biblioteca Moderna</h1>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Masthead Subheading-->
+            <p class="masthead-subheading font-weight-light mb-0">Seja bem vindo ao nosso site.</p>
+            <p class="masthead-subheading font-weight-light mb-0">O maior acervo de livros de toda capital Paulista na palma de sua mão.</p>
+        </div>
+    </header>
+    <!-- Portfolio Section-->
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Livros em Destaque</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Portfolio Grid Items-->
+            <div class="row justify-content-center">
+                <!-- Portfolio Item 1-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/livro1.jpg" alt="..." />
+                    </div>
+                </div>
+                <!-- Portfolio Item 2-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/livro2.jpg" alt="..." />
+                    </div>
+                </div>
+                <!-- Portfolio Item 3-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/livro3.jpg" alt="..." />
+                    </div>
+                </div>
+                <!-- Portfolio Item 4-->
+                <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/livro4.jpg" alt="..." />
+                    </div>
+                </div>
+                <!-- Portfolio Item 5-->
+                <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/livro5.jpg" alt="..." />
+                    </div>
+                </div>
+                <!-- Portfolio Item 6-->
+                <div class="col-md-6 col-lg-4">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                        <div
+                            class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i
+                                    class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/portfolio/livro6.jpg" alt="..." />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section-->
+    <section class="page-section bg-primary text-white mb-0" id="about">
+        <div class="container">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white">Nossa História</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="row">
+                <div class="col-lg-4 ms-auto">
+                    <p class="lead">A biblioteca Moderna está há 29 anos na capital Paulista,oferecendo o maior acervo de livros de todos os genêros da cidade e eficiência em nosso atendimento.</p>
+                </div>
+                <div class="col-lg-4 me-auto">
+                    <p class="lead">Oferecemos convênios especiais para alunos das faculdades e escolas parceiras, com um custo imperdível e acesso a todo o acervo de nossa instituição</p>
+                </div>
+           
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Localização</h4>
+                    <p class="lead mb-0">
+                        Avenida Paulista n°400, Bairro Bela Vista
+                        <br />
+                        São Paulo - SP
+                    </p>
+                </div>
+                <!-- Footer Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Redes Sociais</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i
+                            class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i
+                            class="fab fa-fw fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                </div>
+                <!-- Footer About Text-->
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">Trabalhe Conosco</h4>
+                    <p class="lead mb-0">
+                        Envie seu curriculo
+                        <a href="http://startbootstrap.com">aqui</a>
+                        .
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Direitos Reservados &copy; Gian Softwares S.A 2022</small></div>
+    </div>
+    <!-- Portfolio Modals-->
+    <!-- Portfolio Modal 1-->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">A menina que colecionava borboletas</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/livro1.jpg" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Bruna Vieira está cada vez mais longe dos quinze, e sabe que crescer nunca é tão simples. Considerada uma das blogueiras 
+                                mais influentes do mundo, mais uma vez ela dá vazão ao seu talento como escritora com este seu novo livro de crônicas e pensamentos, 
+                                em que mostra o quanto amadurecer e conquistar a independência é maravilhoso, mas tem seus desafios e poréns. A garota do interior que 
+                                usa batom vermelho e que realizou seus maiores sonhos continua inspirando adolescentes de todo o país. Para ela, as páginas deste livro 
+                                significam o bater de asas das borboletas que colecionou dentro do peito por algum tempo e que agora, finalmente, pode deixar que voem 
+                                livres por aí.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Fechar Janela
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 2-->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">A menina que roubava livros</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/livro2.jpg" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Durante a Segunda Guerra Mundial, uma jovem garota chamada Liesel Meminger sobrevive fora de Munique lendo os livros que ela rouba.
+                                     Ajudada por seu pai adotivo, ela aprende a ler e partilhar livros com seus amigos, incluindo um judeu que vive na clandestinidade em sua casa. 
+                                     Enquanto não está lendo ou estudando, ela faz algumas tarefas para a mãe e brinca com o amigo Rudy.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Fechar Janela
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 3-->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">O mundo das vozes silenciadas</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/livro3.jpg" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Uma nova jornada repleta de descobertas e escolhas difíceis espera por Sophie e pelos leitores em "O mundo das vozes silenciadas", o novo livro de 
+                                Carolina Munhóz e Sophia Abrahão e a aguardada sequência de O Reino das vozes que não se calam, que vendeu mais de 50 mil exemplares e ocupou por nove meses 
+                                o ranking de bestsellers de ficção nacional da Nielsen em 2014.
+                                Anos após ter deixado o Reino das vozes que não se calam, Sophie começa a trabalhar como assistente de um famoso empresário de bandas de rock. Enquanto tenta 
+                                lidar com os desafios de sua nova vida, a jovem não imagina que em breve será chamada de volta para o seu mundo mágico, o único lugar onde já se sentiu acolhida. 
+                                E muito menos o quanto sua longa ausência foi prejudicial para o Reino.
+                                Sophie não é mais uma adolescente insegura. Agora, ela é uma profissional acompanhando uma banda de rock em turnê pela Europa. Para ela, porém, as obrigações da 
+                                vida adulta agora incluem lidar com a mídia, a ansiedade dos fãs, o vício em drogas de um dos integrantes da banda e, principalmente, com o próprio coração partido. 
+                                Apesar de agora ela ter o emprego dos sonhos, o estresse constante de seu dia a dia só aumenta os seus temores de ser dominada outra vez pela tristeza, e Sophie se 
+                                vê assombrada por uma sensação de vazio.
+                                Em meio a um turbilhão de incertezas, a princesa do Reino precisará embarcar em uma jornada para encontrar a si mesma e descobrir qual caminho seguir. Será que Sophie
+                                precisará decidir outra vez entre a realidade e a fantasia?
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Fechar Janela
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 4-->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Nunca desista de seus sonhos</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/livro4.jpg" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Nunca Desista de Seus Sonhos é um livro do psiquiatra, psicoterapeuta e escritor Augusto Cury, lançado em 2004, onde analisa a trajetória de personalidades como 
+                                    Jesus Cristo, Abraham Lincoln e Martin Luther King.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Fechar Janela
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 5-->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">O reino das vozes que não se calam</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/livro5.jpg" alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Se você encontrasse um lugar onde todos o aceitassem... Seria capaz de abandoná-lo? Sophie se esconde de todos e de si mesma: insegura, não consegue enxergar sua beleza
+                                    e talento, e sente dificuldade em se relacionar com os outros. Seu dia a dia se perde entre os caminhos tortuosos dos que convivem com a depressão e o bullying, e a jovem aos poucos
+                                    vai se fechando na escuridão de seus pensamentos. Desamparada e sem coragem de lidar com seus problemas, ela acaba descobrindo um lugar mágico: um Reino onde as vozes não se calam 
+                                    e as criaturas encantadas se tornam reais. Um local colorido onde ela finalmente poderá se encontrar. Dividida entre a realidade e a fantasia, Sophie contará com a ajuda preciosa de
+                                    um rapaz comum e uma guardiã encantada, que lhe mostrarão os segredos da alma e a farão decidir se vale a pena enfrentar seus medos ou viver em um eterno conto de fadas. Em sua estreia
+                                    na Rocco, a escritora Carolina Munhóz, ganhadora do Prêmio Jovem Brasileiro por seu primeiro livro, A fada, apresenta um romance escrito em parceria com a atriz e cantora Sophia Abrahão.
+                                    O Reino das vozes que não se calam marca também a estreia do Fantástica Rocco, novo selo de fantasia da editora que se tornou referência no segmento com a publicação de Harry Potter e 
+                                    outras séries de sucesso.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Fechar Janela
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Modal 6-->
+    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal"
+                        aria-label="Close"></button></div>
+                <div class="modal-body text-center pb-5">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <!-- Portfolio Modal - Title-->
+                                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">O beijo das sombras</h2>
+                                <!-- Icon Divider-->
+                                <div class="divider-custom">
+                                    <div class="divider-custom-line"></div>
+                                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                    <div class="divider-custom-line"></div>
+                                </div>
+                                <!-- Portfolio Modal - Image-->
+                                <img class="img-fluid rounded mb-5" src="assets/img/portfolio/livro6.jpg"
+                                    alt="..." />
+                                <!-- Portfolio Modal - Text-->
+                                <p class="mb-4">Lissa Dragomir é uma adolescente especial, por várias razões: ela é a princesa de uma família real muito importante na sociedade de vampiros conhecidos como Moroi. Por causa desse status
+                                    , Lissa atrai a amizade dos alunos Moroi mais populares na escola em que estuda, a São Vladimir. Sua melhor amiga, no entanto, não carrega consigo o mesmo prestígio: meio vampira, meio humana, Rose 
+                                    Hathaway é uma dampira cuja missão é se tornar uma guardiã e proteger Lissa dos Strigoi — os poderosos vampiros que se corromperam e precisam do sangue Moroi para manter sua imortalidade.Pressentindo 
+                                    que algo muito ruim vai acontecer com Lissa se continuarem na São Vladimir, Rose decide que elas devem fugir dali e viver escondidas entre os humanos. O risco de um ataque dos Strigoi é maior, mas elas
+                                    passam dois anos assim, aparentemente a salvo, até finalmente serem capturadas e trazidas de volta pelos guardiões da escola.Mas isso é só o começo. Em O beijo das sombras, Lissa e Rose retomam não apenas
+                                    a rotina de estudos na São Vladimir como também o convívio com a fútil hierarquia estudantil, dividida entre aqueles que pertencem e os que não pertencem às famílias reais de vampiros. São obrigadas a 
+                                    relembrar as causas de sua fuga e a enfrentar suas temíveis consequências. E, quem sabe, poderão encontrar um par romântico aqui e outro ali. Mais importante, Rose descobre por que Lissa é assim tão especial:
+                                    que poderes se escondem por trás de seu doce e inocente olhar?"Misterioso, único e encantador, com um final tão surpreendente que só os detetives mais sagazes poderiam deduzir."— Publishers Weekly"O sedutor 
+                                    romance de estreia de Richelle Mead une intrincados elementos de fantasia a um cenário contemporâneo, repleto dos temas típicos da juventude e de um rico elenco de personagens.
+                                </p>
+                                <button class="btn btn-primary" data-bs-dismiss="modal">
+                                    <i class="fas fa-xmark fa-fw"></i>
+                                    Close Window
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
+</html>

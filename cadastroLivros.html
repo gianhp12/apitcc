@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Biblioteca Moderna</title>
+    <!-- Favicon--
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+    
+        type="text/css" />
+       
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet"  />
+</head>
+
+<body id="page-top">
+     <!-- Navigation-->
+
+     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Biblioteca Moderna</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item dropdown mx-0 mx-lg-1"> 
+                        <a class="nav-link dropdown-toggle py-3 px-0 px-lg-3 rounded" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Empréstimo</a>
+                         <div class="dropdown-menu">
+                           <a class="dropdown-item" href="#">Novo</a>
+                           <a class="dropdown-item" href="#">Consultar</a>
+                         </div>   
+                    </li>
+                    <li class="nav-item dropdown mx-0 mx-lg-1"> 
+                     <a class="nav-link dropdown-toggle py-3 px-0 px-lg-3 rounded" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Livros</a>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="cadastroLivros.html">Cadastrar</a>
+                        <a class="dropdown-item" href="#">Consultar</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown mx-0 mx-lg-1"> 
+                        <a class="nav-link dropdown-toggle py-3 px-0 px-lg-3 rounded" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Alunos</a>
+                         <div class="dropdown-menu">
+                           <a class="dropdown-item" href="cadastroAlunos.html">Cadastrar</a>
+                           <a class="dropdown-item" href="consultaAlunos.html">Consultar</a>
+                         </div>   
+                    </li>
+                    <li class="nav-item dropdown mx-0 mx-lg-1"> 
+                        <a class="nav-link dropdown-toggle py-3 px-0 px-lg-3 rounded" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#">Funcionarios</a>
+                         <div class="dropdown-menu">
+                           <a class="dropdown-item" href="cadastroFuncionarios.html">Cadastrar</a>
+                           <a class="dropdown-item" href="#">Consultar</a>
+                         </div>   
+                    </li>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br> </br>
+
+    <!-- Masthead-->
+    <section class="page-section" id="contact">
+        <div class="container">
+            <!-- Contact Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Cadastro de Livros</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Contact Section Form-->
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-xl-7">
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- * * SB Forms Contact Form * *-->
+                    <!-- * * * * * * * * * * * * * * *-->
+                    <!-- This form is pre-integrated with SB Forms.-->
+                    <!-- To make this form functional, sign up at-->
+                    <!-- https://startbootstrap.com/solution/contact-forms-->
+                    <!-- to get an API token!-->
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <!-- Name input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="codigo" type="text" placeholder="Entre com seu nome..."
+                                data-sb-validations="required" />
+                            <label for="codigo">Código do livro</label>
+                            <div class="invalid-feedback" data-sb-feedback="codigo:required">O código é obrigátorio</div>
+                        </div>
+                        <!-- Email address input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="titulo" type="text" placeholder="Chapeuzinho Vermelho"
+                            data-sb-validations="required" />
+                            <label for="titulo">Titulo</label>
+                            <div class="invalid-feedback" data-sb-feedback="titulo:required">O Titulo é obrigátorio</div>
+                        </div>
+                        <!-- Phone number input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="autor" type="text" placeholder="Monteiro Lobato"
+                                data-sb-validations="required" />
+                            <label for="autor">Autor</label>
+                            <div class="invalid-feedback" data-sb-feedback="autor:required">O autor é obrigátorio
+                            </div>
+                        </div>
+                        <!-- Message input-->
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="datacompra" type="text" placeholder="06/1/2022"
+                                style="height: 10rem" data-sb-validations="required"></textarea>
+                            <label for="datacompra">Data Compra</label>
+                            <div class="invalid-feedback" data-sb-feedback="datacompra:required">Data da compra é obrigátorio</div>
+                        </div>
+                        <!-- Submit success message-->
+                        <!---->
+                        <!-- This is what your users will see when the form-->
+                        <!-- has successfully submitted-->
+                        <div class="d-none" id="submitSuccessMessage">
+                            <div class="text-center mb-3">
+                                <div class="fw-bolder">Cadastro realizado com sucesso
+                                    <br />
+                                    <a href="cadastroLivros.html">Novo Cadastro</a>
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <!-- Submit error message-->
+                        <!---->
+                        <!-- This is what your users will see when there is-->
+                        <!-- an error submitting the form-->
+                        <div class="d-none" id="submitErrorMessage">
+                            <div class="text-center text-danger mb-3">Error sending message!</div>
+                        </div> 
+                        <!-- Submit Button-->
+                        <button onclick="cadastraLivro(),limpar()" class="btn btn-primary btn-xl" id="submitButton"
+                            type="submit" >Enviar</button>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Localização</h4>
+                    <p class="lead mb-0">
+                        Avenida Paulista n°400, Bairro Bela Vista
+                        <br />
+                        São Paulo - SP
+                    </p>
+                </div>
+                <!-- Footer Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Redes Sociais</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i
+                            class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i
+                            class="fab fa-fw fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                </div>
+                <!-- Footer About Text-->
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">Trabalhe Conosco</h4>
+                    <p class="lead mb-0">
+                        Envie seu curriculo
+                        <a href="http://startbootstrap.com">aqui</a>
+                        .
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Direitos Reservados &copy; Gian Softwares S.A 2022</small></div>
+    </div>
+    
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <!-- * *                               SB Forms JS                               * *-->
+    <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+
+</html>

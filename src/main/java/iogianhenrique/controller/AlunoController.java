@@ -20,6 +20,7 @@ public class AlunoController {
         this.alunos = alunos;
     }
 
+
     @GetMapping("{cpf}")
     public Aluno getAlunoById(@PathVariable BigInteger cpf) {
         return alunos
